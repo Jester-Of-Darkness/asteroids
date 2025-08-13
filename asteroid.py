@@ -4,8 +4,8 @@ from constants import *
 from circleshape import CircleShape
 
 class Asteroid(CircleShape):
-    def __init__(self, x, y, radius):
-        super().__init__(x, y, radius)
+    def __init__(self, x, y, radius, velocity=pygame.Vector2(0, 0)):
+        super().__init__(x, y, radius, velocity)
 
     def split(self):
         self.kill()
