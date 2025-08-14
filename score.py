@@ -15,8 +15,9 @@ class Score:
             self.score += 12
         elif asteroid_radius == 60:
             self.score += 18
-    
-        print(self.score)
+
+    def reset_score(self):
+        self.score = 0
 
 
 
